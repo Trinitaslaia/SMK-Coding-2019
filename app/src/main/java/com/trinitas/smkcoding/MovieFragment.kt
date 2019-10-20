@@ -32,7 +32,7 @@ class MovieFragment : Fragment() {
         //Inflate the layout for the
        rootView = inflater.inflate(R.layout.fragment_movie, container, false)
 
-
+        getListMovie()
 
 //        val list = Movie.listMovie as ArrayList<MovieModel>
 //        val layoutmanager = LinearLayoutManager(activity)

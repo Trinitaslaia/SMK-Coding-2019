@@ -15,10 +15,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         btn_list_movie.onClick {
-//            val intent =
-//                Intent(this@MainActivity , ListMovieActivity::class.java)
-//            startActivity(intent)
-
             startActivity(intentFor<ListMovieActivity>())
         }
     }
