@@ -29,6 +29,16 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_title_movie" />
 
+    <Button
+        android:id="@+id/favorite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Favorite"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/iv_poster_movie"/>
+
+
     <TextView
         android:id="@+id/tv_rating_movie"
         android:layout_width="wrap_content"
@@ -36,7 +46,7 @@
         android:layout_marginTop="20dp"
         android:textSize="16sp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/iv_poster_movie"
+        app:layout_constraintTop_toBottomOf="@id/favorite"
         tools:text="Rating : 72" />
 
     <TextView
