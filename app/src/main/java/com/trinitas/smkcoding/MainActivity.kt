@@ -3,6 +3,7 @@ package com.trinitas.smkcoding
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import kotlinx.android.synthetic.main.activity_detail_movie.*
 import kotlinx.android.synthetic.main.activity_main.*
 import org.jetbrains.anko.intentFor
 import org.jetbrains.anko.sdk27.coroutines.onClick
@@ -16,6 +17,9 @@ class MainActivity : AppCompatActivity() {
 
         btn_list_movie.onClick {
             startActivity(intentFor<ListMovieActivity>())
+        }
+        favorite.onClick {
+            startActivity(intentFor<ListFavoriteActivity>())
         }
     }
 }
